@@ -1,6 +1,5 @@
 ## Welcome to GitHub Pages
 
-
 <div id="app"></div>
 <script src="https://unpkg.com/webamp"></script>
 <script>
@@ -13,12 +12,14 @@
           duration: 5.322286
       }
     ],
+    /*
     __initialWindowLayout: {
         main: { position: { x: 0, y: 0 } },
         equalizer: { position: { x: 0, y: 116 } },
         playlist: { position: { x: 0, y: 232 }, size: [0, 4] },
         milkdrop: { position: { x: 275, y: 0 }, size: [7, 12] }
     }
+    */
   };
   new Webamp(config).renderWhenReady(app);
 </script>
