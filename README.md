@@ -1,5 +1,28 @@
 ## Welcome to GitHub Pages
 
+
+<div id="app"></div>
+<script src="https://unpkg.com/webamp"></script>
+<script>
+  var config = {
+    initialTracks: [
+      {
+        metaData: {
+          artist: "DJ Mike Llama", title: "Llama Whippin' Intro"},
+          url: "https://cdn.jsdelivr.net/gh/captbaritone/webamp@43434d82cfe0e37286dbbe0666072dc3190a83bc/mp3/llama-2.91.mp3",
+          duration: 5.322286
+      }
+    ],
+    __initialWindowLayout: {
+        main: { position: { x: 0, y: 0 } },
+        equalizer: { position: { x: 0, y: 116 } },
+        playlist: { position: { x: 0, y: 232 }, size: [0, 4] },
+        milkdrop: { position: { x: 275, y: 0 }, size: [7, 12] }
+    }
+  };
+  new Webamp(config).renderWhenReady(app);
+</script>
+
 You can use the [editor on GitHub](https://github.com/guillermocalvo/music/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
@@ -35,26 +58,3 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
-
-<div id="app"></div>
-<script src="https://unpkg.com/webamp"></script>
-<script>
-  var config = {
-    initialTracks: [
-      {
-        metaData: {
-          artist: "DJ Mike Llama", title: "Llama Whippin' Intro"},
-          url: "https://cdn.jsdelivr.net/gh/captbaritone/webamp@43434d82cfe0e37286dbbe0666072dc3190a83bc/mp3/llama-2.91.mp3",
-          duration: 5.322286
-      }
-    ],
-    __initialWindowLayout: {
-        main: { position: { x: 0, y: 0 } },
-        equalizer: { position: { x: 0, y: 116 } },
-        playlist: { position: { x: 0, y: 232 }, size: [0, 4] },
-        milkdrop: { position: { x: 275, y: 0 }, size: [7, 12] }
-    }
-  };
-  new Webamp(config).renderWhenReady(app);
-</script>
-
